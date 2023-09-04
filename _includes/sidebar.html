@@ -1,6 +1,8 @@
 <!-- The Side Bar -->
 
 <div id="sidebar" class="d-flex flex-column align-items-end">
+  
+  <img src="{{site.img_cdn}}assets/img/sky2.jpg" alt="My Image"></img>
   <div class="profile-wrapper">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {% if site.avatar != empty and site.avatar %}
@@ -20,7 +22,7 @@
     <div class="site-title">
       <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
-    <div id="site-subtitle" class="row"></div>
+    <div id="subtitle" class="row"></div>
     <!--<div class="site-subtitle fst-italic">{{ site.tagline }}</div>-->
   </div>
   <!-- .profile-wrapper -->
