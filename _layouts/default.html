@@ -77,14 +77,17 @@ layout: compress
   </body>
   <script>
 
-    $('#subtitle').html('test1'+'<span></span>');
+
+    $('#subtitle').html('<span></span>');
     var tes= ["</br>Introduction:<br/>"+"site.tagline "];
 
-      const typed2 = new useTypewriter('#subtitle span', {
-      strings: tes,
-      typeSpeed: 60,
-      cursorChar:"_",
-      loop:false
-    });
+      const typed2 = new Typewriter('#subtitle span', {
+  strings: tes,
+  autoStart: true,
+  loop: false,
+	cursor:"_",
+	typeSpeed: 20,
+  deleteSpeed: 0
+});
   </script>
 </html>
