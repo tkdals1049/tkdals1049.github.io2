@@ -1,5 +1,3 @@
-
-
 $('#subtitle').html('test2'+'<span></span>');
 var tes= ["</br>Introduction:<br/>"+"site.tagline "];
 

@@ -75,19 +75,5 @@ layout: compress
 
     {% include_cached search-loader.html %}
   </body>
-  <script>
-    import React from 'react'
-    import { Typewriter } from 'react-simple-typewriter'
-    import { useTypewriter, Cursor } from "react-simple-typewriter";
-
-    $('#subtitle').html('test'+'<span></span>');
-    var tes= ["</br>Introduction:<br/>"+"site.tagline "];
-
-      const typed2 = new useTypewriter('#subtitle span', {
-      strings: tes,
-      typeSpeed: 60,
-      cursorChar:"_",
-      loop:false
-    });
-  </script>
+  <script src="{{site.img_cdn}}assets/js/typed.js"></script>
 </html>
