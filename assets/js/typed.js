@@ -1,3 +1,6 @@
+import React from 'react'
+import { Typewriter } from 'react-simple-typewriter'
+
 $('#subtitle').html('test2'+'<span></span>');
 var tes= ["</br>Introduction:<br/>"+"site.tagline "];
 
