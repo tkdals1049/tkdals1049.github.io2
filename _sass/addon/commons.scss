@@ -765,6 +765,9 @@ $btn-mb: 0.5rem;
     }
   }
 
+  #hello p,#subtitle p{
+    text-align: justify;
+  }
   .site-subtitle {
     font-size: 95%;
     color: var(--site-subtitle-color);
