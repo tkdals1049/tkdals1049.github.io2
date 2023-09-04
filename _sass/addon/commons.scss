@@ -725,6 +725,7 @@ $btn-mb: 0.5rem;
 
   #avatar {
     display: block;
+    margin-left: 2.0rem;
     width: 7rem;
     height: 7rem;
     overflow: hidden;
@@ -751,12 +752,11 @@ $btn-mb: 0.5rem;
 
   .site-title {
     font-weight: 900;
-    font-size: 1.75rem;
+    font-size: 1.60rem;
     line-height: 1.2;
     letter-spacing: 0.25px;
-    margin-top: 1.25rem;
-    margin-bottom: 0.5rem;
-
+    margin-top: 3.25rem;
+    margin-bottom: 1.5rem;
     a {
       @extend %clickable-transition;
       @extend %sidebar-link-hover;
@@ -764,12 +764,11 @@ $btn-mb: 0.5rem;
       color: var(--site-title-color);
     }
   }
-
-  #hello p,#subtitle p{
-    text-align: justify;
-  }
+  
   .site-subtitle {
+    
     font-size: 95%;
+    margin-top: 5.25rem;
     color: var(--site-subtitle-color);
     margin-top: 0.25rem;
     word-spacing: 1px;
@@ -780,6 +779,8 @@ $btn-mb: 0.5rem;
   }
 
   ul {
+    position: absolute;
+    top:450px;
     margin-bottom: 2rem;
 
     li.nav-item {
@@ -832,6 +833,8 @@ $btn-mb: 0.5rem;
   .sidebar-bottom {
     @include pl-pr(2rem);
 
+    position: absolute;
+    top:780px;
     margin-bottom: 1.5rem;
 
     %button {

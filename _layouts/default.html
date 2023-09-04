@@ -78,16 +78,17 @@ layout: compress
   <script>
 
 
-    $('#subtitle').html('<span></span>');
-    var tes= ["</br>Introduction:<br/>"+"site.tagline "];
+    $('#site-subtitle').html('<span></span>');
+    var tes= ["{{site.tagline}}","Name: 이상민"+'<br/>Hobby: 게임 플레이 및 분석 </br>'+'Phone: 010-5061-1046</br>'+'E-Mail: tkdals1049@naver.com'];
 
-      const typed2 = new Typewriter('#subtitle span', {
+      const typed2 = new Typewriter('#site-subtitle span', {
   strings: tes,
   autoStart: true,
-  loop: false,
+  loop: true,
 	cursor:"_",
-	typeSpeed: 20,
-  deleteSpeed: 0
+  pauseFor:3000,
+  deleteSpeed:10,
+  delay:50
 });
   </script>
 </html>
