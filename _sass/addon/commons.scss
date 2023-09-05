@@ -692,20 +692,8 @@ $btn-gap: 0.8rem; // for the bottom icons
 $btn-border-width: 3px;
 $btn-mb: 0.5rem;
 
-#bg {
-  img{
-  position: absolute;
-  opacity: 0.7;
-  margin: 0 auto;
-  z-index:10000;
-	height: 15px;
-	width: 10px;
-  }
-}
-
 #sidebar {
   @include pl-pr(0);
-
   position: fixed;
   top: 0;
   left: 0;
@@ -736,8 +724,20 @@ $btn-mb: 0.5rem;
   }
   img
   {
-    position: absolute;
+    position: static;
   }
+  #bg {
+    img{
+    position: absolute;
+    opacity: 0.7;
+    z-index:-10000;
+    height: 100%;
+    width: 100%;
+    margin-left: -100%;
+    text-align: center;
+    }
+  }
+  
   #avatar {
     display: block;
     margin-left: 2.0rem;
@@ -746,7 +746,7 @@ $btn-mb: 0.5rem;
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
-    margin-top: 1.25rem;
+    margin-top: 2.25rem;
 
     img {
       transition: transform 0.5s;
@@ -782,8 +782,8 @@ $btn-mb: 0.5rem;
     }
   }
   
-  subtitle {
-    
+  #subtitle {
+    font-weight : bolder ;
     font-size: 90%;
     margin-top: 5.25rem;
     color: var(--site-subtitle-color);
@@ -805,7 +805,7 @@ $btn-mb: 0.5rem;
 
   ul {
     position: absolute;
-    top:480px;
+    top:450px;
     margin-bottom: 2rem;
 
     li.nav-item {
