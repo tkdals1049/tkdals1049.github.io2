@@ -691,6 +691,18 @@ $sidebar-display: 'sidebar-display';
 $btn-gap: 0.8rem; // for the bottom icons
 $btn-border-width: 3px;
 $btn-mb: 0.5rem;
+
+#bg {
+  img{
+  position: absolute;
+  opacity: 0.7;
+  margin: 0 auto;
+  z-index:10000;
+	height: 15px;
+	width: 10px;
+  }
+}
+
 #sidebar {
   @include pl-pr(0);
 
@@ -725,17 +737,6 @@ $btn-mb: 0.5rem;
   img
   {
     position: absolute;
-
-  }
-
-  #bg {
-    
-    img{
-    position: absolute;
-    opacity: 0.7;
-    margin: 0 auto;
-    z-index:-100;
-    }
   }
   #avatar {
     display: block;
