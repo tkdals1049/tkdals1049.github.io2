@@ -742,7 +742,7 @@ $btn-mb: 0.5rem;
 
     img {
       transition: transform 0.5s;
-
+      opacity: 1.0;
       &:hover {
         transform: scale(1.2);
       }
