@@ -89,7 +89,9 @@
 
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   
-  {% include mode-toggle.html %}
+  {% unless site.theme_mode %}
+    {% include mode-toggle.html %}
+  {% endunless %}
   <script type="text/javascript">
     modeToggle.setDark();
   </script>
