@@ -728,6 +728,17 @@ $btn-mb: 0.5rem;
   {
     position: static;
   }
+  #bg {
+    img{
+    position: absolute;
+    opacity: 0.7;
+    z-index:-1;
+    height: 100%;
+    width: 100%;
+    margin-left: -100%;
+    text-align: center;
+    }
+  }
   
   #avatar {
     display: block;

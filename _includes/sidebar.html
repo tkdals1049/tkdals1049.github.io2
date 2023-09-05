@@ -1,6 +1,9 @@
 <!-- The Side Bar -->
 
 <div id="sidebar" class="d-flex flex-column align-items-end">
+<div id="bg">
+  <img src="{{site.img_cdn}}assets/img/sky.jpg" alt="My Image"></img>
+  </div>
 <div class="profile-wrapper">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {% if site.avatar != empty and site.avatar %}
@@ -49,7 +52,7 @@
   <!-- ul.nav.flex-column -->
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-  
+     {% unless site.theme_mode %} 
      <button class="mode-toggle btn" aria-label="Switch Mode">
         <i class="fas fa-adjust"></i>
       </button>
@@ -58,8 +61,8 @@
         <span class="icon-border"></span>
       {% endif %}
       
+    {% endunless %}
     
-
     {% for entry in site.data.contact %}
       {% case entry.type %}
         {% when 'github', 'twitter' %}
