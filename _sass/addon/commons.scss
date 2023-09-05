@@ -701,9 +701,11 @@ $btn-mb: 0.5rem;
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  background: var(--sidebar-bg);
+  //background: var(--sidebar-bg);
 
-  
+  background-image: url('/assets/img/sky.jpg'); /*사용하고 싶은 이미지 경로*/
+  background-size: cover;  /*이미지의 size가 보여질 부분의 사이즈와 다른 경우에는 이미지 크기를 꽉차게 만든다 */
+  background-repeat: no-repeat;
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
     display: none;
@@ -725,17 +727,6 @@ $btn-mb: 0.5rem;
   img
   {
     position: static;
-  }
-  #bg {
-    img{
-    position: absolute;
-    opacity: 0.7;
-    z-index:-10000;
-    height: 100%;
-    width: 100%;
-    margin-left: -100%;
-    text-align: center;
-    }
   }
   
   #avatar {

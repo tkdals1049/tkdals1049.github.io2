@@ -88,10 +88,11 @@
   <!-- JavaScript -->
 
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  {% unless site.theme_mode %}
-    {% include mode-toggle.html %}
-  {% endunless %}
-
+  
+  {% include mode-toggle.html %}
+  <script type="text/javascript">
+    modeToggle.setDark();
+  </script>
   {% include metadata-hook.html %}
   
 </head>
