@@ -57,6 +57,7 @@ Fork Chirpy에서 리포지토리 이름을 <GH_USERNAME>.github.io 로 설정�
 git clone https://github.com/[username]/[username].github.io.git
 프로젝트 루트 디렉토리로 들어가서 아래 명령어를 통해 chirpy를 초기화한다.
 
+프로젝트 폴더에 들어가서 마우스 오른쪽 클릭으로 배쉬를 직접 키고 
 bash tools/init.sh
 그러면 다음과 같은 작업이 실행된다.
 
@@ -78,3 +79,9 @@ bundle
 원격으로 올리기 전에 먼저 보고 싶다면 아래 명령어를 실행하고 http://127.0.0.1:4000 으로 들어가본다.
 
 bundle exec jekyll s
+
+## 깃페이지 설정 
+
+프로젝트 설정의 왼쪽 목록에 페이지 항목에 들어가 index를 다른 걸로 바꿔주고
+바로 밑에 박스의 설정에 들어가 페이지를 활성화 시키고
+https://tkdals1049.github.io에 접속한다.
