@@ -38,15 +38,18 @@
     </li>
      the real tabs -->
     {% for tab in site.tabs %}
+    
+    {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
+    {% if tab_name != 'tags' %}
       <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
         <a href="{{ tab.url | relative_url }}" class="nav-link">
           <i class="fa-fw {{ tab.icon }}"></i>
-          {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
           <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
         </a>
       </li>
       <!-- .nav-item -->
+    {% endif %}
     {% endfor %}
   </ul>
   <!-- ul.nav.flex-column -->
