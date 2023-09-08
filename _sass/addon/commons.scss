@@ -748,7 +748,7 @@ $btn-mb: 0.5rem;
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
-    margin-top: 2.25rem;
+    margin-top: 4.25rem;
 
     img {
       transition: transform 0.5s;
@@ -787,7 +787,7 @@ $btn-mb: 0.5rem;
   #subtitle {
     font-weight : bolder ;
     font-size: 90%;
-    margin-top: 5.25rem;
+    margin-top: 5.00rem;
     color: var(--site-subtitle-color);
     margin-top: 0.25rem;
     z-index:1;
