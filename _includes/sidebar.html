@@ -37,8 +37,8 @@
       </a>
     </li>
      the real tabs -->
-    {% for gal in site.gallery %}
-    gal
+    {% for gal in site.static_files %}
+    {{gal.path}}
     {% endfor %}
     
     {% for tab in site.tabs %}
