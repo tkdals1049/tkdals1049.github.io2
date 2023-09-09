@@ -37,6 +37,11 @@
       </a>
     </li>
      the real tabs -->
+    {% for gal in site.gallerys %}
+    gal.url
+    {% endfor %}
+    test.url
+    
     {% for tab in site.tabs %}
     
     {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}

@@ -1,11 +1,11 @@
 ---
-layout: gallery
+layout: gallerys
 icon: fa-regular fa-images
 order: 4
 ---
 
-title: Gallery
+title: Gallerys
 subtitle: From the pexels folder
-permalink: /gallery/
+permalink: /gallerys/
 gallery_path: "assets/img/pexels"
 tags: [Page]

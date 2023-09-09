@@ -131,6 +131,10 @@ collections:
   tabs:
     output: true
     sort_by: order
+  gallerys:
+    output: true
+    sort_by: order
+    permalink: gallerys/:path:output_ext/
 
 defaults:
   - scope:
@@ -152,6 +156,12 @@ defaults:
       type: tabs # see `site.collections`
     values:
       layout: page
+      permalink: /:title/
+  - scope:
+      path: ""
+      type: gallerys # see `site.collections`
+    values:
+      layout: img
       permalink: /:title/
   - scope:
       path: assets/img/favicons
