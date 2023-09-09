@@ -134,7 +134,7 @@ collections:
   gallerys:
     output: true
     sort_by: order
-    permalink: gallerys/:path:output_ext/
+    permalink: /:collection/:name
 
 defaults:
   - scope:
@@ -158,12 +158,6 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: ""
-      type: gallerys # see `site.collections`
-    values:
-      layout: img
-      permalink: /:title/
-  - scope:
       path: assets/img/favicons
     values:
       swcache: true
@@ -171,6 +165,7 @@ defaults:
       path: assets/js/dist
     values:
       swcache: true
+      
 
 sass:
   style: compressed
