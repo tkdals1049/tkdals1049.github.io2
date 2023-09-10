@@ -1,16 +1,16 @@
 ---
 layout: page
-# The Gallery layout
+# The Gallerys layout
 ---
 
 {% include lang.html %}
 
-<div id="gallery" data-exif='{{ site.exif }}'>
+<div id="gallerys" data-exif='{{ site.exif }}'>
   {% for image in site.static_files %}
-  {% if image.path contains 'fulls' %}
+  {% if image.path contains 'gallery' %}
   <article class="thumb">
-      <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-          <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+      <a href="{{site.img_cdn}}gallerys/{{ image.name }}" class="image">
+          <img src="{{site.img_cdn}}gallerys/{{ image.name }}" alt=""
                data-name="{{ image.name }}"/></a>
       <!--<h2></h2>
       <p></p>-->
