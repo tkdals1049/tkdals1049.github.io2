@@ -52,10 +52,8 @@ google_site_verification: # fill in to your verification string
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics: "UA-46465113-2"
-#  id: # fill in your Google Analytics ID
-image_fulls_loc: "/images/fulls"
-image_thumbs_loc: "/images/thumbs"
+google_analytics:
+  id: # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #
@@ -117,7 +115,6 @@ pwa:
 paginate: 10
 future: true
 # ------------ The following options are not recommended to be modified ------------------
-exif: '[{"tag": "Model", "icon": "camera-retro"}, {"tag": "FNumber", "icon": "dot-circle-o"}, {"tag": "ExposureTime", "icon": "clock-o"}, {"tag": "ISOSpeedRatings", "icon": "info-circle"}]'
 
 kramdown:
   syntax_highlighter: rouge
