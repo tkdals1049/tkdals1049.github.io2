@@ -1,84 +1,35 @@
-# The Site Configuration
 
-# Import the theme
 theme: jekyll-theme-chirpy
-
-# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
-# and doesn't have a custom domain.
 baseurl: ""
-
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
 lang: en
-
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Seoul
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
+image_fulls_loc: "/images/fulls"
+image_thumbs_loc: "/images/thumbs"
+google_analytics: "UA-46465113-2"
 
-title: 지그의 게임 개발기 # the main title
-
-tagline: 저에게 게임은 휴식이자 즐거움입니다. 그렇기에 게임을 통해 지친 마음을 쉬게하고 다른 도전을 할 수 있는 게임을 만드는 것이 저의 꿈입니다. # it will display as the sub-title
-
-description: >- # used by seo meta and the atom feed
+title: 지그의 게임 개발기 
+tagline: 저에게 게임은 휴식이자 즐거움입니다. 그렇기에 게임을 통해 지친 마음을 쉬게하고 다른 도전을 할 수 있는 게임을 만드는 것이 저의 꿈입니다. 
+description: >- 
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://tkdals1049.github.io"
 
 github:
-  username: tkdals1049 # change to your github username
-
+  username: tkdals1049 
 twitter:
-  username: tkdals1049 # change to your twitter username
-
+  username: tkdals1049 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: tkdals1049
-  email: tkdals1049@naver.com # change to your email address
+  email: tkdals1049@naver.com 
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/tkdals1049 # change to your twitter homepage
-    - https://github.com/tkdals1049 # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://twitter.com/tkdals1049 
+    - https://github.com/tkdals1049 
+google_site_verification: 
 
-google_site_verification: # fill in to your verification string
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
-
-google_analytics:
-  id: # fill in your Google Analytics ID
-
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
 theme_mode: # [dark|light]
 
-# The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
-# will be added to all image (site avatar & posts' images) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-img_cdn:   "https://tkdals1049.github.io/"   # "https://chirpy-img.netlify.app"
-
-# the avatar on sidebar, support local or CORS resources
+img_cdn:   "https://tkdals1049.github.io/"  
 avatar: "assets/img/favicons/favicon.ico"
-
-# boolean type, the global switch for TOC in posts.
 toc: true
 
 comments:
