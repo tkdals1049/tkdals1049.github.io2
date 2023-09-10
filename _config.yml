@@ -165,6 +165,11 @@ defaults:
       path: assets/js/dist
     values:
       swcache: true
+  - scope:
+      path: "gallerys"
+      type: gallerys # see `site.collections`
+    values:
+      image: true
       
 
 sass:

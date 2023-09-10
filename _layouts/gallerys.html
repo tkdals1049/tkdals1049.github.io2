@@ -6,8 +6,8 @@ layout: page
 {% include lang.html %}
 
 <div id="gallerys" data-exif='{{ site.exif }}'>
-  {% for image in site.static_files %}
-  {% if image.path contains 'gallery' %}
+  {% assign image_files = site.static_files | where: "gallerys", true %}
+  {% for image in image_files %}
   <article class="thumb">
       <a href="{{site.img_cdn}}gallerys/{{ image.name }}" class="image">
           <img src="{{site.img_cdn}}gallerys/{{ image.name }}" alt=""
@@ -15,23 +15,9 @@ layout: page
       <!--<h2></h2>
       <p></p>-->
   </article>
-  {% endif %}
   {% endfor %}
 </div>
 
-<div class="col-lg-12">
-  <div id="imageGallery">
-    <div id="gallery-sizer"></div>
-    {% for image in site.static_files %}
-    {% if image.path contains 'test' %}
-      <a href="{{site.img_cdn}}{{image.path}}"data-responsive="{{image.path}}" class="image">
-      {% if picture.title %} data-sub-html="<div class='lg-toolbar caption'><h4>{{ picture.title | escape }}</h4>{% if picture.caption %}<p>{{ picture.caption | escape }}</p>{% endif %}</div>"{% endif %}>
-        <img alt="{{ picture.title }}" class="img-thumbnail" src="{{site.img_cdn}}/assets/img/test/{{image.basename}}-thumbnail{{image.extname}}" />
-      </a>
-      {% endif %}
-      {% endfor %}
-    </div>
-</div>
 <script type="text/javascript">
   $(document).ready(function() {
       $("#imageGallery").lightGallery({
