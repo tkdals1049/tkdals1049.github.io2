@@ -195,8 +195,6 @@ exclude:
   - rollup.config.js
   - node_modules
   - package*.json
-  - assets/lightgallery/demo/README.md
-  - assets/lightgallery/test/lightgallery.html
 
 jekyll-archives:
   enabled: [categories, tags]
