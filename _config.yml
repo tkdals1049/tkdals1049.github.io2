@@ -166,7 +166,7 @@ defaults:
     values:
       swcache: true
   - scope:
-      path: "gallerys"
+      path: assets/img/test
       type: gallerys # see `site.collections`
     values:
       image: true
