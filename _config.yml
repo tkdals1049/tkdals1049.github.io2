@@ -54,6 +54,8 @@ google_site_verification: # fill in to your verification string
 
 google_analytics: "UA-46465113-2"
 #  id: # fill in your Google Analytics ID
+image_fulls_loc: "/images/fulls"
+image_thumbs_loc: "/images/thumbs"
 
 # Prefer color scheme setting.
 #
