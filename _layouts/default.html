@@ -28,18 +28,6 @@ layout: compress
       
       <div id="main" class="container px-xxl-5">{% include lang.html %}
 
-      <div id="gallerys" data-exif='{{ site.exif }}'>
-        {% for image in site.static_files %}
-        {% if image.path contains 'gallerys' %}
-        <article class="thumb">
-            <a href="{{site.img_cdn}}gallerys/{{ image.name }}" class="image">
-                <img src="{{site.img_cdn}}gallerys/{{ image.name }}" alt=""
-                     data-name="{{ image.name }}"/></a>
-            <!--<h2></h2>
-            <p></p>-->
-        </article>
-        {% endif %}
-        {% endfor %}
         {% include topbar.html lang=lang %}
         {{ content }}
         {% include_cached search-results.html lang=lang %}
@@ -88,11 +76,11 @@ layout: compress
     {% endif %}
 
     {% include_cached search-loader.html %}
-    <script src="{{site.img_cdn}}assets/js/jquery.min.js"></script>
-    <script src="{{site.img_cdn}}assets/js/jquery.poptrox.js"></script>
-    <script src="{{site.img_cdn}}assets/js/skel.min.js"></script>
-    <script src="{{site.img_cdn}}assets/js/util.js"></script>
-    <script src="{{site.img_cdn}}assets/js/exif.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/exif.js"></script>
     <script src="assets/js/main.min.js"></script>
   </body>
   <script>
