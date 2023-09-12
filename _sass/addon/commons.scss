@@ -687,6 +687,46 @@ mjx-container {
 }
 
 /* --- sidebar layout --- */
+h3 {
+  font-weight: 700;
+}
+
+.skillset {
+  .item {
+    overflow: hidden;
+  }
+  .level-title {
+    height: 12px;
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .level-bar {
+    height: 12px;
+    background: rgb(255, 255, 255);
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .level-bar-inner {
+    height: 12px;
+    background: rgb(79, 79, 79);
+  }
+}
+
+@media (min-width: 992px) {
+  .skillset .level-title {
+    display: inline-block;
+    float: left;
+    width: 30%;
+  }
+
+  .skillset .level-bar {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    position: relative;
+    top: 1px;
+  }
+}
 
 $sidebar-display: 'sidebar-display';
 $btn-gap: 0.8rem; // for the bottom icons
@@ -749,7 +789,7 @@ $btn-mb: 0.5rem;
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
-    margin-top: 4.25rem;
+    margin-top: 3.25rem;
 
     img {
       transition: transform 0.5s;
