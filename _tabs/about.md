@@ -3,10 +3,9 @@
 icon: fas fa-info-circle
 order: 5
 ---
-<div id="bg">
-  <img src="https://tkdals1049.github.io/assets/img/porfile1.jpeg" alt="My Image"></img>
-  <img src="https://tkdals1049.github.io/assets/img/porfile2.jpeg" alt="My Image"></img>
-</div>
+  <img src="https://tkdals1049.github.io/assets/img/profile1.png" alt="My Image"></img>
+  <img src="https://tkdals1049.github.io/assets/img/profile2.png" alt="My Image"></img>
+  <img src="https://tkdals1049.github.io/assets/img/img.png" alt="My Image"></img>
   
 ![Desktop View](/assets/img/porfile1.png){: width="972" height="589" .w-50 .left}
 ![Desktop View](/assets/img/porfile2.png){: width="972" height="589" .w-50 .left}
