@@ -3,16 +3,11 @@
 icon: fas fa-info-circle
 order: 5
 ---
-  <img src="https://tkdals1049.github.io/assets/img/profile1.png" alt="My Image"></img>
-  <img src="https://tkdals1049.github.io/assets/img/profile2.png" alt="My Image"></img>
-  <img src="https://tkdals1049.github.io/assets/img/img.png" alt="My Image"></img>
-  
-![Desktop View](/assets/img/porfile1.png){: width="972" height="589" .w-50 .left}
-![Desktop View](/assets/img/porfile2.png){: width="972" height="589" .w-50 .left}
-Praesent maximus aliquam sapien. Sed vel neque in dolor pulvinar auctor. Maecenas pharetra, sem sit amet interdum posuere, tellus lacus eleifend magna, ac lobortis felis ipsum id sapien. Proin ornare rutrum metus, ac convallis diam volutpat sit amet. Phasellus volutpat, elit sit amet tincidunt mollis, felis mi scelerisque mauris, ut facilisis leo magna accumsan sapien. In rutrum vehicula nisl eget tempor. Nullam maximus ullamcorper libero non maximus. Integer ultricies velit id convallis varius. Praesent eu nisl eu urna finibus ultrices id nec ex. Mauris ac mattis quam. Fusce aliquam est nec sapien bibendum, vitae malesuada ligula condimentum.
+<div>
+  <img src="https://tkdals1049.github.io/assets/img/profile1.png"><img style="display:block; margin: -50px 0px 0px 0px;" src="https://tkdals1049.github.io/assets/img/profile2.png">
+</div>
 
-
- <h2 class="section-title">
+<h2 class="section-title">
 <span class="fa-stack fa-xs">
 <i class="fas fa-circle fa-stack-2x"></i>
 <i class="fas fa-user fa-stack-1x fa-inverse"></i>
