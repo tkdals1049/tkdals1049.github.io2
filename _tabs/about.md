@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 5
 ---
 <div>
-  <img src="https://tkdals1049.github.io/assets/img/profile1.png"><img style="display:block; margin: -50px 0px 0px 0px;" src="https://tkdals1049.github.io/assets/img/profile2.png">
+  <img src="https://tkdals1049.github.io/assets/img/profile1.png"><img style="display:block; margin: -20px 0px 0px 0px;" src="https://tkdals1049.github.io/assets/img/profile2.png">
 </div>
 
 <h2 class="section-title">
